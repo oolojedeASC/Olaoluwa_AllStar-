@@ -28,6 +28,19 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        // When button is  clicked
+
+        final Button contBtn = (Button) findViewById(R.id.contBtn);
+
+        contBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                //contBtn.setText("Clicked");
+                Intent intent = new Intent(MainActivity.this, BudgetActivity.class);
+                MainActivity.this.startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -46,13 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
 
-        //If settings button clicked, starts settings activity (page)
-        if(id == R.id.action_settings){
-            Intent intent = new Intent(this, SettingsActivity.class);
-            startActivity(intent);
-            return true;
-        }
-
+        //If Profile button clicked, starts settings activity (page)
         if(id == R.id.action_profile){
             Intent intent = new Intent(this, ProfileActivity.class);
             startActivity(intent);
