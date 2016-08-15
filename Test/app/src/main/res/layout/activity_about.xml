@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -22,6 +24,29 @@
     </android.support.design.widget.AppBarLayout>
 
     <include layout="@layout/content_about" />
+
+    <!--To make Salvico header and describtion scrollable -->
+    TextView sal = (TextView) findViewById(R.id.textView2);
+    sal.setMovementMethod(new ScrollingMovementMethod());
+
+    TextView sald = (TextView) findViewById(R.id.textView3);
+    sald.setMovementMethod(new ScrollingMovementMethod());
+
+    <!--To make Team header and describtion scrollable -->
+    TextView team = (TextView) findViewById(R.id.textView4);
+    team.setMovementMethod(new ScrollingMovementMethod());
+
+    <!-- Mohammed describition -->
+    TextView teamdm = (TextView) findViewById(R.id.textView5);
+    teamdm.setMovementMethod(new ScrollingMovementMethod());
+
+    <!-- Mohammed describition -->
+    TextView teamdo = (TextView) findViewById(R.id.textView6);
+    teamdo.setMovementMethod(new ScrollingMovementMethod());
+
+
+
+
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
