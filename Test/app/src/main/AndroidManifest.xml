@@ -50,7 +50,10 @@
             android:label="@string/title_activity_help"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".BudgetActivity"></activity>
+        <activity android:name=".BudgetActivity" />
+        <activity android:name=".FoodPlaceActivity" />
+        <activity android:name=".RestaurantInfoActivity" />
+        <activity android:name=".RestaurantPageActivity"></activity>
     </application>
 
 </manifest>

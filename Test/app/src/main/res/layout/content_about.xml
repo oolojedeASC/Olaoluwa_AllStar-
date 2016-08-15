@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
+<!-- My brother added scroll view at top and ended at botton then
+  made the scrolling bar wrap the height of the content and not the parent's -->
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"

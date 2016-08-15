@@ -1,53 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.example.olaoluwaolejede.test.AboutActivity">
+    tools:context="com.example.olaoluwaolejede.test.FoodPlaceActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
 
-        <android.support.v7.widget.Toolbar
+        <!-- <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            app:popupTheme="@style/AppTheme.PopupOverlay" /> !-->
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_about" />
+    <include layout="@layout/content_food_place" />
 
-    <!--To make Salvico header and description scrollable -->
-    TextView sal = (TextView) findViewById(R.id.textView2);
-    sal.setMovementMethod(new ScrollingMovementMethod());
-
-    TextView sald = (TextView) findViewById(R.id.textView3);
-    sald.setMovementMethod(new ScrollingMovementMethod());
-
-    <!--To make Team header and description scrollable -->
-    TextView team = (TextView) findViewById(R.id.textView4);
-    team.setMovementMethod(new ScrollingMovementMethod());
-
-    <!-- Mohammed descripition -->
-    TextView teamdm = (TextView) findViewById(R.id.textView5);
-    teamdm.setMovementMethod(new ScrollingMovementMethod());
-
-    <!-- Mohammed descripition -->
-    TextView teamdo = (TextView) findViewById(R.id.textView6);
-    teamdo.setMovementMethod(new ScrollingMovementMethod());
-
-
-
-
-
+    <!-- Allow user to save inforamtion of the resturant the user recently went to, put in proflie activity-->
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
@@ -57,3 +33,4 @@
         android:src="@android:drawable/ic_dialog_email" />
 
 </android.support.design.widget.CoordinatorLayout>
+

@@ -7,8 +7,9 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.olaoluwaolejede.test.BudgetActivity">
+    tools:context="com.example.olaoluwaolejede.test.RestaurantInfoActivity">
 
-    <include layout="@layout/content_budget" />
+    <include layout="@layout/content_restaurant_info" />
 
 </RelativeLayout>
+
